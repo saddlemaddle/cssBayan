@@ -1,7 +1,30 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    background: rgb(172, 162, 162);
+    background: rgb(243, 238, 238);
+    font-family: 'Fredoka One';
+    font-weight: 900;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.memes-item:hover {
+    color: rgb(67, 67, 201);
+}
+.memes-title {
+    display: block;
+    cursor: pointer;
+}
+.memes-input {
+    appearance: none;
+}
+.memes-input:checked + .memes-picture {
+    display: block;
+}
+.memes-picture {
+    display: none;
 }

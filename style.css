@@ -8,14 +8,34 @@ body {
     font-family: 'Fredoka One';
     font-weight: 900;
 }
-.wrapper {
-    max-width: 1200px;
+h1 {
+    text-align: center;
+}
+label {
+    text-align: center;
+}
+.memes-picture {
     margin: 0 auto;
+}
+.memes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.memes-picture {
+    border: 1px solid red;
+}
+.memes-item {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
 }
 .memes-item:hover {
     color: rgb(67, 67, 201);
 }
 .memes-title {
+    border: 1px solid red;
     display: block;
     cursor: pointer;
 }

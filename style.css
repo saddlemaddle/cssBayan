@@ -53,12 +53,10 @@ label {
 .memes-input:checked ~ .memes-picture {
     display: block;
 }
-.memes-item:hover .memes-picture {
-    display: block;
-}
 .memes-picture {
     display: none;
 }
+
 .memes-title:before {
     content: url(icon/add_icon.svg);
     order: 2;
@@ -69,3 +67,23 @@ label {
     content: url(icon/close_icon.svg);
     order: 2;
 }
+@media screen and (max-width: 480px) {
+    body {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
+    body {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media screen and (min-width: 1025px) {
+    .memes-input:hover ~ .memes-picture {
+        display: block;
+    }
+    body {
+      font-size: 1.5rem;
+    }
+  }

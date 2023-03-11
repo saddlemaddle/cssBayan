@@ -7,36 +7,38 @@ body {
     background: rgb(243, 238, 238);
     font-family: 'Fredoka One';
     font-weight: 900;
+    font-size: 1.5rem;
 }
 h1 {
     text-align: center;
 }
 label {
-    text-align: center;
+    padding-top: 0.5rem;
 }
 .memes-picture {
     margin: 0 auto;
 }
 .memes {
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid red;
-}
-.memes-picture {
-    border: 1px solid red;
+    /* border: 2px solid red; */
 }
 .memes-item {
-    border: 1px solid red;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+    border-top: 0.2rem solid rgb(224, 191, 191);
     display: flex;
     flex-direction: column;
-}
-.memes-item:hover {
-    color: rgb(67, 67, 201);
+    align-self: center;
 }
 .memes-title {
-    border: 1px solid red;
-    display: block;
+    /* border: 1px solid red; */
+    display: flex;
     cursor: pointer;
 }
 .memes-input {
@@ -47,4 +49,11 @@ label {
 }
 .memes-picture {
     display: none;
+}
+.icon {
+    display: inline-block;
+    margin-left: auto;
+}
+.memes:hover .icon {
+    display: inline-block;
 }

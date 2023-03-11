@@ -36,24 +36,36 @@ label {
     flex-direction: column;
     align-self: center;
 }
+.memes-item:hover .memes-title {
+    color: black;
+}
+.memes-input:checked + .memes-title {
+    color: black;
+}
 .memes-title {
     /* border: 1px solid red; */
+    color: rgb(0, 0, 245);
     display: flex;
     cursor: pointer;
 }
 .memes-input {
     appearance: none;
 }
-.memes-input:checked + .memes-picture {
+
+.memes-input:checked ~ .memes-picture {
+    display: block;
+}
+.memes-item:hover .memes-picture {
     display: block;
 }
 .memes-picture {
     display: none;
 }
 .icon {
+    visibility: hidden;
     display: inline-block;
     margin-left: auto;
 }
 .memes:hover .icon {
-    display: inline-block;
+    visibility: visible;
 }
